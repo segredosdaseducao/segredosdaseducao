@@ -1,0 +1,150 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+/* Bold mais forte no título e cor */
+h3 b {
+  font-weight: 800;
+  color: #fd69d1;
+}
+
+/* Small menor ainda */
+small {
+  font-size: 12px;
+}
+
+/* Bold no small com cor */
+small b {
+  font-weight: 600;
+  color: #fd69d1;
+}
+
+/* Button a */
+a#botaoCheckout {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: #fd69d1 !important;
+  border-color: #fd69d1 !important;
+  /* transition: 0.2s ease-in-out 0s; */
+  padding: 20px 0px 20px 0px;
+
+  box-shadow: 0 0 0 0 rgba(253, 104, 208, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+a#botaoCheckout:hover,
+a#botaoCheckout:active {
+  background-color: #ff46c8 !important;
+  border-color: #ff46c8 !important;
+  /* transform: scale(1.02); */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(253, 104, 208, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(253, 104, 208, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(253, 104, 208, 0);
+  }
+}
+
+/* Barra fixa */
+.navbar {
+  /* background-color: rgba(253, 105, 209, 0.7); */
+  background: black;
+  z-index: 9999999;
+}
+.navbar .navbar-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+.navbar .navbar-text b,
+.navbar .navbar-text #localizacao {
+  font-weight: 400;
+}
+
+.piscar-vermelho {
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/* TERMOS */
+.card-termos .card-body {
+  font-size: 12px;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.card-termos .card-body .titulo {
+  font-weight: 600;
+}
+
+.card-termos .card-footer a.btn {
+  font-weight: 300;
+  background-color: #fd69d1 !important;
+  border-color: #fd69d1 !important;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-shadow: 0 0 0 0 rgba(253, 104, 208, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.card-termos .card-footer a.btn:hover,
+.card-termos .card-footer a.btn:active {
+  background-color: #ff46c8 !important;
+  border-color: #ff46c8 !important;
+}
+
+/* Alerta Continuar Assistindo */
+.containerAlerta .alert {
+  animation: pulseAlerta 2s infinite;
+}
+
+.containerAlerta small b {
+  color: #58151c;
+}
+
+@keyframes pulseAlerta {
+  0% {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 rgb(241, 174, 181, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(241, 174, 181, 0);
+  }
+
+  100% {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 rgb(241, 174, 181, 0);
+  }
+}
+
+/* VSL BRILHANTE */
+#vslElemento {
+  box-shadow: 0 0 15px 1.5px #fd69d1;
+}

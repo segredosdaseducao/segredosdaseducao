@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segredos da Sedução</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- Poppins Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/personalizado.css" />
+
+    <!-- CSS Chat -->
+    <link rel="stylesheet" href="css/chat.css" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-W3HTKHL");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVZHH57LZV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GVZHH57LZV");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "1380038742794975");
+      fbq("track", "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=1380038742794975&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <link rel="preload" href="https://scripts.converteai.net/c9b55fc7-af14-4aa7-a659-417176ad2d68/players/647fb5a2586baa0009993f5a/player.js" as="script" />
+    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script" />
+    <link rel="preload" href="https://images.converteai.net/c9b55fc7-af14-4aa7-a659-417176ad2d68/players/647fb5a2586baa0009993f5a/thumbnail.jpg" as="image" />
+    <link rel="preload" href="https://cdn.converteai.net/c9b55fc7-af14-4aa7-a659-417176ad2d68/647fb470c85c3a000a1a4c23/main.m3u8" as="fetch" />
+    <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+    <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+    <link rel="dns-prefetch" href="https://images.converteai.net" />
+    <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+
+    <!-- Hotjar Tracking Code for Segredos da Sedução -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3525076, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3HTKHL" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- BARRA FIXA -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid text-center align-items-center justify-content-center">
+        <span class="navbar-text" id="frasePessoasOnline"
+          ><i class="bi bi-eye-fill me-2"></i><b><span id="pessoasOnline"></span> mulheres</b> de <span id="localizacao">sua região</span> estão <b>assistindo</b> ao vídeo ao vivo.</span
+        >
+        <span class="navbar-text" id="tempoBloqueio" style="display: none"
+          ><i class="bi bi-lock-fill me-2"></i>O <b>vídeo</b> vai ser <b>excluído</b> do Brasil em
+          <b><span id="contadorMinutos">30</span> minutos e <span id="contadorSegundos">00</span> segundos</b>.</span
+        >
+      </div>
+    </nav>
+    <!-- ./BARRA FIXA -->
+
+    <!-- MAIN -->
+    <div class="container text-center py-5 mt-5">
+      <!-- TITULO -->
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <h3><b>REACENDA A</b> CHAMA DA <b>PAIXÃO</b> E CONSTRUA UM <b>RELACIONAMENTO SÓLIDO</b> EM APENAS 10 PODEROSOS PASSOS</h3>
+          <small>Veja como é fácil reviver a paixão perdida e criar uma conexão profunda que transformará seu relacionamento para sempre!</small>
+        </div>
+      </div>
+      <!-- ./TITULO -->
+      <!-- VSL -->
+      <div class="row align-items-center justify-content-center mt-5">
+        <div class="col-12 col-md-8">
+          <div id="vslElemento">
+            <div id="vid_647fb5a2586baa0009993f5a" style="position: relative; width: 100%; padding: 56.25% 0 0">
+              <img
+                id="thumb_647fb5a2586baa0009993f5a"
+                src="https://images.converteai.net/c9b55fc7-af14-4aa7-a659-417176ad2d68/players/647fb5a2586baa0009993f5a/thumbnail.jpg"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block"
+              />
+              <div id="backdrop_647fb5a2586baa0009993f5a" style="position: absolute; top: 0; width: 100%; height: 100%; -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px)"></div>
+            </div>
+            <script type="text/javascript" id="scr_647fb5a2586baa0009993f5a">
+              var s = document.createElement("script");
+              (s.src = "https://scripts.converteai.net/c9b55fc7-af14-4aa7-a659-417176ad2d68/players/647fb5a2586baa0009993f5a/player.js"), (s.async = !0), document.head.appendChild(s);
+            </script>
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3 mt-md-2">
+            <i class="bi bi-volume-up-fill me-1" style="font-size: 22px; color: #fd69d1"></i>
+            <small> Por favor, verifique se seu som está ligado. </small>
+          </div>
+        </div>
+      </div>
+      <!-- ./VSL -->
+      <!-- BOTAO DELAY ATÉ PITCH -->
+      <div class="row align-items-center justify-content-center mt-5" id="boxBotao" style="display: none">
+        <div class="col-12 col-md-5 mx-auto">
+          <div class="d-grid gap-2">
+            <a href="https://pay.kiwify.com.br/qs8kxyv" class="btn btn-primary" type="button" id="botaoCheckout"><i class="bi bi-bag-heart-fill me-2"></i>QUERO ACESSO AO PROGRAMA AGORA</a>
+          </div>
+        </div>
+      </div>
+      <!-- ./BOTAO -->
+      <!-- FRASE -->
+      <div class="row align-items-center justify-content-center mt-4 mt-md-5">
+        <div class="col">
+          <small>Tenha a <b>mesma sensação</b>, <b>paixão</b>, <b>segurança</b>, <b>confiança</b> e <b>frio na barriga</b> de como era no começo por todos os <b>próximos anos</b>.</small>
+        </div>
+      </div>
+      <!-- ./FRASE -->
+    </div>
+    <!-- ./MAIN -->
+
+    <!-- ALERTA CONTINUAR ASSISTINDO -->
+    <div class="container py-2 containerAlerta" id="containerAlertaAntesChat" style="display: none">
+      <div class="row">
+        <div class="col col-md-6 mx-auto text-start">
+          <div onclick="window.scrollTo(0, 0);" class="alert alert-danger d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-circle-fill me-2 me-md-3"></i>
+            <small> O vídeo <b>ficará fora do ar</b> em breve. Essa é sua <b>última chance</b> de <b>assistir</b> até o final! <b>Continue assistindo</b> 👋. </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./ALERTA -->
+
+    <!-- CHAT AO VIVO -->
+    <div class="container py-3" id="containerChat">
+      <div class="row">
+        <div class="col col-md-6 mx-auto">
+          <div class="card chat-main" id="chat">
+            <div class="card-header chat-header text-center">CHAT DO VÍDEO</div>
+            <div class="card-body chat-body">
+              <div class="chat-container">
+                <ul class="list-group list-group-flush chat-messages"></ul>
+              </div>
+              <div class="row pt-3">
+                <div class="col">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      placeholder="Envie uma mensagem"
+                      aria-label="Envie uma mensagem"
+                      aria-describedby="botao-enviar-mensagem"
+                      id="input-mensagem"
+                    />
+                    <button class="btn btn-outline-secondary" type="button" id="botao-enviar-mensagem"><i class="bi bi-send-fill"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer chat-footer">
+              <div class="d-grid gap-2">
+                <button class="btn btn-light" type="button" id="ocultar-chat-btn">Ocultar chat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./CHAT AO VIVO -->
+
+    <!-- ALERTA CONTINUAR ASSISTINDO -->
+    <div class="container py-2 containerAlerta" id="containerAlertaDepoisChat" style="display: none">
+      <div class="row">
+        <div class="col col-md-6 mx-auto text-start">
+          <div onclick="window.scrollTo(0, 0);" class="alert alert-danger d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-circle-fill me-2 me-md-3"></i>
+            <small> O vídeo <b>ficará fora do ar</b> em breve. Essa é sua <b>última chance</b> de <b>assistir</b> até o final! <b>Continue assistindo</b> 👋. </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./ALERTA -->
+
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-md-between justify-content-center align-items-center pt-3 mt-4 pb-3 border-top">
+        <small class="col-md-4 mb-0 text-body-secondary text-center">
+          Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.
+        </small>
+
+        <ul class="nav col-md-4 justify-content-end mt-2 mt-md-0">
+          <li class="nav-item">
+            <small><a href="termos-de-uso.html" class="nav-link px-2 text-body-secondary">Termos de Uso</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a href="politicas-de-privacidade.html" class="nav-link px-2 text-body-secondary"> Políticas de Privacidade</a></small>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- ./FOOTER -->
+
+    <!-- TOAST -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container bottom-0 start-50 translate-middle-x fixed-bottom mb-3 mb-md-4">
+        <div class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex align-items-center justify-content-center">
+            <div id="imgToast" class="toast-body"><img src="http://bride.ru/ph/phcgi/ladies/1155/1155253P1.jpg" class="rounded-circle ms-2" style="width: 52px; height: 52px" /></div>
+            <div class="toast-body">
+              <small><b>Maria</b> também <b>está assistindo</b> o vídeo ao vivo.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./TOAST -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Configuração -->
+    <script>
+      //Definir quantos minutos vai ter o contador (recomendo poucos minutos a mais que a VSL)
+      let contadorMinutosBloqueio = 30;
+      let contadorSegundosBloqueio = 0;
+
+      // Configurações para toast
+      let frequencia = 10000; // Defina a cada quantos segundos mostrará um toast (padrão é 10s) em milissegundos
+      let aparecerToastCompra = 16; // Defina a partir de qual minuto do contador deverá aparecer notificações de compra
+      let minutosAumentarFrequencia = 16; // Defina a partir de qual minuto do contador que a frequencia dos toasts deverá começar a aumentar (padrão 7m)
+      let frequenciaMaximaAumentada = 3000; // Defina a cada quantos segundos mostrará um toast quando chegar no pitch de vendas (padrão é 3s)
+      let checarFrequencia = 60000; // Defina a cada quantos segundos deverá ser checada a opção de aumentar a frequencia de toats (padrão é 60s / 1m) em milissegundos
+
+      // Configuração botão checkout
+      let minutosParaAparecerBotao = 11; // Defina em quantos minutos o botão deverá aparecer (padrão 20m)
+      let linkCheckout = "https://pay.kiwify.com.br/qs8kxyv"; // Defina o link do checkout para atribuir ao botão
+
+      // Configurações chat envio de mensagem
+      let bloquearChat = false; // Defina true para bloquear o envio de mensagens no chat ou false para desbloquear
+      let contadorSegundosBloqueioChat = 30; // Defina o tempo de bloqueio para cada nova mensagem no chat
+      let bloquearMensagemTemporariamente = true; // Defina true para bloquear envio de mensagens por intervalo ou false para desativar bloqueio temporario
+
+      // Configurações chat live
+      let desativarComentarios = 28; // Defina a partir de qual minuto do contador que os comentários deverão ser desativados / caso deseje que não desative coloque -100 / ele será reativado nos comentários de compra caso os comentários de compra estejam ativos
+      let enviarComentariosCompra = true; // Define se é para enviar comentários de compra (true or false)
+      let aparecerComentariosCompra = 16; // Defina a partir de qual minuto do contador que os comentários de compra irão aparecer (padrão 5m)
+
+      $(document).ready(function () {
+        iniciarContador(); // Iniciar contador
+        iniciarToast(); // Iniciar toast
+        iniciarContadorBotao(); // Ininiciar o contador do botão
+        iniciarLinkBotao(); // Iniciar a configuração do link do botão
+        adicionarComentarios(); // Iniciar a geração de comentários
+
+        // Mostrar alerta para assistir ao vídeo quando ele sair da tela
+        inView("#vslElemento")
+          .on("enter", (el) => {
+            $("#containerAlertaAntesChat").fadeOut();
+            $("#containerAlertaDepoisChat").fadeOut();
+          })
+          .on("exit", (el) => {
+            $("#containerAlertaAntesChat").fadeIn();
+            $("#containerAlertaDepoisChat").fadeIn();
+          });
+      });
+    </script>
+
+    <!-- Localização -->
+    <script src="js/localizacao.js"></script>
+
+    <!-- Pessoas online -->
+    <script src="js/pessoasOnline.js"></script>
+
+    <!-- Contador -->
+    <script src="js/contador.js"></script>
+
+    <!-- Aleatoriedde de troca de mensagens -->
+    <script src="js/trocarMensagem.js"></script>
+
+    <!-- Toats -->
+    <script src="js/toasts.js"></script>
+
+    <!-- Timeout botão -->
+    <script src="js/mostrarBotao.js"></script>
+
+    <!-- Repassar UTM e parâmetros para o link do checkout -->
+    <script src="js/linkBotao.js"></script>
+
+    <!-- Chat funcional -->
+    <script src="js/chat.js"></script>
+
+    <!-- Chat ao Vivo -->
+    <script src="js/chatLive.js"></script>
+
+    <!-- In View -->
+    <script src="js/in-view.min.js"></script>
+  </body>
+</html>
